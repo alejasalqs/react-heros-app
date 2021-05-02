@@ -1,8 +1,6 @@
-import { heros } from "../data/heroes";
+import { heroes } from "../data/heroes";
 
-export const getHeroByPublisher = (publisher) => {
-  const validPublisher = ["DC Comics", "Marvel Comics"];
-
-  if (validPublisher.includes(publisher)) {
-  }
+export const getHeroById = (id) => {
+  // con .find() devolvemos el primer match que se encuentre
+  return heroes.find((hero) => hero.id === id);
 };
