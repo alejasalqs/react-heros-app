@@ -1,6 +1,25 @@
-import React from "react";
+import React, { useReducer } from "react";
+import { AuthContext } from "./auth/AuthContext";
+import { authReducer } from "./auth/authReducer";
 import { AppRouter } from "./routers/AppRouter";
 
+const init = () => {
+  // La funcion init lo que hace es ir al localStorage a buscar un objeto
+  // Si el objeto existe significa que esta loggeado, si no exite devuelve un obj logged false
+  // Lo que devuelva será el initialState por defecto
+  return (
+    JSON.parse(localStorage.getItem("user")) || {
+      logged: false,
+    }
+  );
+};
+
 export const HeroesApp = () => {
-  return <AppRouter />;
+  const [user, dispatch] = useReducer(authReducer, {}, init);
+
+  return (
+    <AuthContext.Provider value={{ user, dispatch }}>
+      <AppRouter />
+    </AuthContext.Provider>
+  );
 };

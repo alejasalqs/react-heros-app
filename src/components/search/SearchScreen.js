@@ -1,6 +1,5 @@
 import React, { useMemo } from "react";
 import { useLocation } from "react-router";
-import { heroes } from "../../data/heroes";
 import { useForm } from "../../hooks/useForm";
 import { HeroCard } from "../heroes/HeroCard";
 import queryString from "query-string"; // -> npm i query-string
