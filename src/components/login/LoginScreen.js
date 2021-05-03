@@ -9,6 +9,8 @@ export const LoginScreen = ({ history }) => {
   const { dispatch } = useContext(AuthContext);
 
   const handleLogin = () => {
+    // Revisa si hay una pagina en el localStorage y lo regresa ahi mismo
+    const lastPath = localStorage.getItem("pathname") || "/";
     // el push nos redirecciona a otra pagina usando react router
     //history.push("/");
     // el replace lo que hace es reemplazar el historail, lo cual evitar usar el boton de atras
@@ -18,7 +20,7 @@ export const LoginScreen = ({ history }) => {
         name: "Alejandro",
       },
     });
-    history.replace("/");
+    history.replace(lastPath);
   };
   return (
     <div className="container mt-5">
