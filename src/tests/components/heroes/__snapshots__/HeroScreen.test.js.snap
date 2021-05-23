@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el componente <HeroScreen /> Debe de mostrar el componente <Redirect /> si no hay parametros en el URL  1`] = `
+<Router
+  history={
+    Object {
+      "action": "POP",
+      "block": [Function],
+      "canGo": [Function],
+      "createHref": [Function],
+      "entries": Array [
+        Object {
+          "hash": "",
+          "key": "55benq",
+          "pathname": "/hero",
+          "search": "",
+          "state": undefined,
+        },
+      ],
+      "go": [Function],
+      "goBack": [Function],
+      "goForward": [Function],
+      "index": 0,
+      "length": 1,
+      "listen": [Function],
+      "location": Object {
+        "hash": "",
+        "key": "55benq",
+        "pathname": "/hero",
+        "search": "",
+        "state": undefined,
+      },
+      "push": [Function],
+      "replace": [Function],
+    }
+  }
+>
+  <HeroScreen
+    history={
+      Object {
+        "createHref": [MockFunction],
+        "goBack": [MockFunction],
+        "length": 10,
+        "listen": [MockFunction],
+        "location": Object {},
+        "push": [MockFunction],
+        "replace": [MockFunction],
+      }
+    }
+  />
+</Router>
+`;

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el componente <LoginScreen/> Debe de mostrarse correctamente  1`] = `
+<LoginScreen
+  history={
+    Object {
+      "replace": [MockFunction],
+    }
+  }
+/>
+`;

@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el componente <Navbar/> Debe de mostrarse correctamente 1`] = `
+<MemoryRouter>
+  <Router
+    history={
+      Object {
+        "createHref": [MockFunction],
+        "listen": [MockFunction],
+        "location": Object {},
+        "push": [MockFunction],
+        "replace": [MockFunction],
+      }
+    }
+  >
+    <Navbar />
+  </Router>
+</MemoryRouter>
+`;
